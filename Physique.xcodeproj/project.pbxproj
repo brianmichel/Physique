@@ -6,9 +6,31 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		722F3BB21BC752C400B970A1 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F3BB11BC752C400B970A1 /* AppKit.framework */; };
+		722F3BB41BC752D500B970A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722F3BB31BC752D500B970A1 /* Foundation.framework */; };
+		722F3BBA1BC7540C00B970A1 /* PhysiqueSystemInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 722F3BB91BC7540C00B970A1 /* PhysiqueSystemInformation.m */; settings = {ASSET_TAGS = (); }; };
+		7244F42A1BCB082D001A1181 /* PhysiqueIDEBuildOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7244F4291BCB082D001A1181 /* PhysiqueIDEBuildOperation.m */; settings = {ASSET_TAGS = (); }; };
+		7265C9261BC74CB90048EE98 /* PhysiquePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 7265C9251BC74CB90048EE98 /* PhysiquePlugin.m */; settings = {ASSET_TAGS = (); }; };
+		72EAAACD1BC969CA006C5766 /* PhysiqueOperationMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EAAACC1BC969CA006C5766 /* PhysiqueOperationMonitor.m */; settings = {ASSET_TAGS = (); }; };
+		72EAAAD31BC96F5A006C5766 /* PhysiqueBuildSpeedTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EAAAD21BC96F5A006C5766 /* PhysiqueBuildSpeedTracker.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		722F3BB11BC752C400B970A1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		722F3BB31BC752D500B970A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		722F3BB81BC7540C00B970A1 /* PhysiqueSystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysiqueSystemInformation.h; sourceTree = "<group>"; };
+		722F3BB91BC7540C00B970A1 /* PhysiqueSystemInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysiqueSystemInformation.m; sourceTree = "<group>"; };
+		7244F4281BCB082D001A1181 /* PhysiqueIDEBuildOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysiqueIDEBuildOperation.h; sourceTree = "<group>"; };
+		7244F4291BCB082D001A1181 /* PhysiqueIDEBuildOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysiqueIDEBuildOperation.m; sourceTree = "<group>"; };
 		7265C91B1BC74B720048EE98 /* Physique.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Physique.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		7265C91E1BC74B720048EE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7265C9241BC74CB90048EE98 /* PhysiquePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysiquePlugin.h; sourceTree = "<group>"; };
+		7265C9251BC74CB90048EE98 /* PhysiquePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysiquePlugin.m; sourceTree = "<group>"; };
+		72EAAACB1BC969CA006C5766 /* PhysiqueOperationMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysiqueOperationMonitor.h; sourceTree = "<group>"; };
+		72EAAACC1BC969CA006C5766 /* PhysiqueOperationMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysiqueOperationMonitor.m; sourceTree = "<group>"; };
+		72EAAAD11BC96F5A006C5766 /* PhysiqueBuildSpeedTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhysiqueBuildSpeedTracker.h; sourceTree = "<group>"; };
+		72EAAAD21BC96F5A006C5766 /* PhysiqueBuildSpeedTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhysiqueBuildSpeedTracker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -16,16 +38,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722F3BB41BC752D500B970A1 /* Foundation.framework in Frameworks */,
+				722F3BB21BC752C400B970A1 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		722F3BB51BC752DC00B970A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				722F3BB31BC752D500B970A1 /* Foundation.framework */,
+				722F3BB11BC752C400B970A1 /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		722F3BB61BC753DE00B970A1 /* Plugin Entry Point */ = {
+			isa = PBXGroup;
+			children = (
+				7265C9241BC74CB90048EE98 /* PhysiquePlugin.h */,
+				7265C9251BC74CB90048EE98 /* PhysiquePlugin.m */,
+				72EAAACB1BC969CA006C5766 /* PhysiqueOperationMonitor.h */,
+				72EAAACC1BC969CA006C5766 /* PhysiqueOperationMonitor.m */,
+			);
+			name = "Plugin Entry Point";
+			sourceTree = "<group>";
+		};
+		722F3BB71BC753EF00B970A1 /* System Information */ = {
+			isa = PBXGroup;
+			children = (
+				722F3BB81BC7540C00B970A1 /* PhysiqueSystemInformation.h */,
+				722F3BB91BC7540C00B970A1 /* PhysiqueSystemInformation.m */,
+			);
+			name = "System Information";
+			sourceTree = "<group>";
+		};
+		7244F42B1BCB0830001A1181 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7244F4281BCB082D001A1181 /* PhysiqueIDEBuildOperation.h */,
+				7244F4291BCB082D001A1181 /* PhysiqueIDEBuildOperation.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		7265C9121BC74B720048EE98 = {
 			isa = PBXGroup;
 			children = (
 				7265C91D1BC74B720048EE98 /* Physique */,
+				722F3BB51BC752DC00B970A1 /* Frameworks */,
 				7265C91C1BC74B720048EE98 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,9 +104,22 @@
 		7265C91D1BC74B720048EE98 /* Physique */ = {
 			isa = PBXGroup;
 			children = (
+				7244F42B1BCB0830001A1181 /* Models */,
+				722F3BB61BC753DE00B970A1 /* Plugin Entry Point */,
+				72EAAACF1BC96F03006C5766 /* Trackers */,
+				722F3BB71BC753EF00B970A1 /* System Information */,
 				7265C91E1BC74B720048EE98 /* Info.plist */,
 			);
 			path = Physique;
+			sourceTree = "<group>";
+		};
+		72EAAACF1BC96F03006C5766 /* Trackers */ = {
+			isa = PBXGroup;
+			children = (
+				72EAAAD11BC96F5A006C5766 /* PhysiqueBuildSpeedTracker.h */,
+				72EAAAD21BC96F5A006C5766 /* PhysiqueBuildSpeedTracker.m */,
+			);
+			name = Trackers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EAAACD1BC969CA006C5766 /* PhysiqueOperationMonitor.m in Sources */,
+				7265C9261BC74CB90048EE98 /* PhysiquePlugin.m in Sources */,
+				7244F42A1BCB082D001A1181 /* PhysiqueIDEBuildOperation.m in Sources */,
+				722F3BBA1BC7540C00B970A1 /* PhysiqueSystemInformation.m in Sources */,
+				72EAAAD31BC96F5A006C5766 /* PhysiqueBuildSpeedTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,11 +280,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
 				INFOPLIST_FILE = Physique/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.xcode.Physique;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
@@ -212,11 +294,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
 				INFOPLIST_FILE = Physique/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/Developer/Shared/Xcode/Plug-ins";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsm.xcode.Physique;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
@@ -240,6 +323,7 @@
 				7265C9231BC74B720048EE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
